@@ -1,6 +1,6 @@
 {
   "taro1-component": {
-    "prefix": "taroc",
+    "prefix": "taro-component",
     "body": [
       "import Taro, { Component } from '@tarojs/taro'",
       "import { View } from '@tarojs/components'",

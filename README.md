@@ -4,7 +4,7 @@ vscode的代码提示功能，$1表示光标第一个所在区域，按tab键会
 
 ## 代码片段
 
-### taroc
+### taro-component
 
 ```javascript
 import Taro, { Component } from '@tarojs/taro'
