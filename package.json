@@ -2,10 +2,10 @@
     "name": "taro-snippets",
     "displayName": "taro-snippets",
     "description": "taro snippets",
-    "version": "0.0.1",
-    "publisher": "hacker",
+    "version": "0.0.2",
+    "publisher": "shuhao",
     "engines": {
-      "vscode": "^1.52.0"
+      "vscode": "^1.50.0"
     },
     "categories": [
       "Snippets"

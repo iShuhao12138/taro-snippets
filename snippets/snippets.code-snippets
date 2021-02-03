@@ -1,6 +1,6 @@
 {
   "taro1-component": {
-    "prefix": "taro-component",
+    "prefix": "taroc",
     "body": [
       "import Taro, { Component } from '@tarojs/taro'",
       "import { View } from '@tarojs/components'",
@@ -130,7 +130,7 @@
   },
 
   "config": {
-    "prefix": "config",
+    "prefix": "taro-config",
     "body": [
       "config = {",
       "  navigationBarTitleText: '$1',",
