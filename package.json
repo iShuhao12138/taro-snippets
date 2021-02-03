@@ -3,7 +3,7 @@
     "displayName": "taro-snippets",
     "description": "taro snippets",
     "version": "0.0.2",
-    "publisher": "shuhao",
+    "publisher": "hacker",
     "engines": {
       "vscode": "^1.50.0"
     },
