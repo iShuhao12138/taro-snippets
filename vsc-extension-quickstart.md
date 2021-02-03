@@ -1,23 +1,34 @@
-# Welcome to your VS Code Extension
+# 发布说明
 
-## What's in the folder
+## 全局安装vsce
 
-* This folder contains all of the files necessary for your extension.
-* `package.json` - this is the manifest file that defines the location of the snippet file and specifies the language of the snippets.
-* `snippets/snippets.json` - the file containing all snippets.
+```
+npm install -g vsce
+```
 
-## Get up and running straight away
+## 创建publisher
 
-* Press `F5` to open a new window with your extension loaded.
-* Create a new file with a file name suffix matching your language.
-* Verify that your snippets are proposed on intellisense.
+* 首先访问 https://login.live.com 登录你的`MicroSoft`账户，没有先注册一个
+* 然后访问 https://aka.ms/SignupAzureDevOps ,如果未登录过，则先注册一个邮箱为后缀的组织
+* 点击 `用户设置` -> `Person access tokens` ,组织选择`All accessible organizations`, scopes选择`Full access`点击确定创建publisher-name以及生成的token
 
-## Make changes
+## 登录vsce并输入token
+注意修改package.json中的publisher
 
-* You can relaunch the extension from the debug toolbar after making changes to the files listed above.
-* You can also reload (`Ctrl+R` or `Cmd+R` on Mac) the VS Code window with your extension to load your changes.
+```
+vsce login publisher-name
+```
 
-## Install your extension
+## 打包及发布
 
-* To start using your extension with Visual Studio Code copy it into the `<user home>/.vscode/extensions` folder and restart Code.
-* To share your extension with the world, read on https://code.visualstudio.com/docs about publishing an extension.
+* 打包
+
+```
+vsce package
+```
+* 发布
+
+```
+vsce publish
+```
+
