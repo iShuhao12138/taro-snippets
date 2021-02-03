@@ -4,6 +4,26 @@ vscode的代码提示功能，$1表示光标第一个所在区域，按tab键会
 
 ## 代码片段
 
+### taro-page
+
+```javascript
+import Taro, { Component, Config } from '@tarojs/taro'
+import { View } from '@tarojs/components'
+
+export default class $1 extends Component {
+  config: Config = {
+    navigationBarTitleText: '$2',
+    navigationBarTextStyle: 'black'
+  }
+
+  render () {
+    return (
+      <View>$3</View>
+    )
+  }
+}
+```
+
 ### taro-component
 
 ```javascript
@@ -26,12 +46,6 @@ config = {
   navigationBarTitleText: '$1',
   navigationBarTextStyle: 'black'
 }
-```
-
-### setState
-
-```javascript
-this.setState({ $1: $2 })
 ```
 
 ### eventCenter.on
