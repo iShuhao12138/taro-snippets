@@ -6,7 +6,7 @@
       "import { View } from '@tarojs/components'",
       "",
       "export default class $1 extends Component {",
-      "  render () {",
+      "  render() {",
       "    return (",
       "      <View>$2</View>",
       "    )",
@@ -115,17 +115,6 @@
       "  }",
       "}",
       ""
-    ]
-  },
-
-  "render": {
-    "prefix": "render",
-    "body": [
-      "render() {",
-      "  return (",
-      "    <View>$1</View>",
-      "  )",
-      "}"
     ]
   },
 
