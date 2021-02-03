@@ -2,7 +2,7 @@
     "name": "taro-snippets",
     "displayName": "taro-snippets",
     "description": "生成taro组件代码以及使用taro方法提示",
-    "version": "0.0.5",
+    "version": "0.0.6",
     "publisher": "hacker",
     "engines": {
       "vscode": "^1.50.0"
@@ -11,9 +11,18 @@
       "Snippets"
     ],
     "contributes": {
+      "languages": [
+        {
+          "id": "typescript",
+          "extensions": [
+            ".ts",
+            ".tsx"
+          ]
+        }
+      ],
       "snippets": [
         {
-          "language": "javascript",
+          "language": "typescript",
           "path": "./snippets/snippets.code-snippets"
         }
       ]
