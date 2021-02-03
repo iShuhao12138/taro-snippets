@@ -1,0 +1,638 @@
+{
+  "taro1-component": {
+    "prefix": "taro-component",
+    "body": [
+      "import Taro, { Component } from '@tarojs/taro'",
+      "import { View } from '@tarojs/components'",
+      "",
+      "export default class $1 extends Component {",
+      "  render () {",
+      "    return (",
+      "      <View>$2</View>",
+      "    )",
+      "  }",
+      "}"
+    ]
+  },
+
+  "componentWillMount": {
+    "prefix": "componentWillMount",
+    "body": [
+      "componentWillMount() {",
+      "  $1",
+      "}",
+      ""
+    ]
+  },
+
+  "componentDidMount": {
+    "prefix": "componentDidMount",
+    "body": [
+      "componentDidMount() {",
+      "  $1",
+      "}",
+      ""
+    ]
+  },
+
+  "componentDidShow": {
+    "prefix": "componentDidShow",
+    "body": [
+      "componentDidShow() {",
+      "  $1",
+      "}",
+      ""
+    ]
+  },
+
+  "componentDidHide": {
+    "prefix": "componentDidHide",
+    "body": [
+      "componentDidHide() {",
+      "  $1",
+      "}",
+      ""
+    ]
+  },
+
+  "componentWillUnmount": {
+    "prefix": "componentWillUnmount",
+    "body": [
+      "componentWillUnmount() {",
+      "  $1",
+      "}",
+      ""
+    ]
+  },
+
+  "componentWillReceiveProps": {
+    "prefix": "componentWillReceiveProps",
+    "body": [
+      "componentWillReceiveProps(nextProps) {",
+      "  $1",
+      "}",
+      ""
+    ]
+  },
+
+  "onTabItemTap": {
+    "prefix": "onTabItemTap",
+    "body": [
+      "onTabItemTap() {",
+      "  $1",
+      "}",
+      ""
+    ]
+  },
+
+  "onPullDownRefresh": {
+    "prefix": "onPullDownRefresh",
+    "body": [
+      "onPullDownRefresh() {",
+      "  $1",
+      "}",
+      ""
+    ]
+  },
+
+  "onReachBottom": {
+    "prefix": "onReachBottom",
+    "body": [
+      "onReachBottom() {",
+      "  $1",
+      "}",
+      ""
+    ]
+  },
+
+  "onShareAppMessage": {
+    "prefix": "onShareAppMessage",
+    "body": [
+      "onShareAppMessage() {",
+      "  return {",
+      "    title: '$1',",
+      "    path: '$2'",
+      "  }",
+      "}",
+      ""
+    ]
+  },
+
+  "render": {
+    "prefix": "render",
+    "body": [
+      "render() {",
+      "  return (",
+      "    <View>$1</View>",
+      "  )",
+      "}"
+    ]
+  },
+
+  "config": {
+    "prefix": "config",
+    "body": [
+      "config = {",
+      "  navigationBarTitleText: '$1',",
+      "  navigationBarTextStyle: 'black'",
+      "}",
+      ""
+    ]
+  },
+
+  "setState": {
+    "prefix": "setState",
+    "body": [
+      "this.setState({ $1: $2 })"
+    ]
+  },
+
+  "eventCenterOn": {
+    "prefix": "eventCenter.on",
+    "body": [
+      "Taro.eventCenter.on('$1', $2)"
+    ]
+  },
+
+  "eventCenterOff": {
+    "prefix": "eventCenter.off",
+    "body": [
+      "Taro.eventCenter.off('$1', $2)"
+    ]
+  },
+
+  "IState": {
+    "prefix": "IState",
+    "body": [
+      "type IState = {",
+      "  $1: $2",
+      "}"
+    ]
+  },
+
+  "IProps": {
+    "prefix": "IProps",
+    "body": [
+      "type IProps = {",
+      "  $1: $2",
+      "}"
+    ]
+  },
+
+  "addGlobalClass": {
+    "prefix": "addGlobalClass",
+    "body": [
+      "static options = {",
+      "  addGlobalClass: true",
+      "}"
+    ]
+  },
+
+  "showToast": {
+    "prefix": "Taro.showToast",
+    "body": "Taro.showToast({ icon: '$1', title: '$2' })"
+  },
+
+  "hideToast": {
+    "prefix": "Taro.hideToast",
+    "body": "Taro.hideToast()"
+  },
+
+  "showLoading": {
+    "prefix": "Taro.showLoading",
+    "body": "Taro.showLoading({ title: '$1' })"
+  },
+
+  "hideLoading": {
+    "prefix": "Taro.hideLoading",
+    "body": "Taro.hideLoading()"
+  },
+
+  "getSystemInfoSync": {
+    "prefix": "Taro.getSystemInfoSync",
+    "body": "Taro.getSystemInfoSync()"
+  },
+
+  "cls": {
+    "prefix": "cls",
+    "body": "console.log($1)"
+  },
+
+  "getLocation": {
+    "prefix": "Taro.getLocation",
+    "body": [
+      "Taro.getLocation({",
+      "  type: 'gcj02',",
+      "  success(resp: { latitude: number, longitude: number, speed: number, accuracy: number, altitude: number, verticalAccuracy: number, horizontalAccuracy: number }) {",
+      "    $1",
+      "  }",
+      "})"
+    ]
+  },
+
+  "openLocation": {
+    "prefix": "Taro.openLocation",
+    "body": [
+      "Taro.openLocation({",
+      "  latitude: $1,",
+      "  longitude: $2",
+      "})"
+    ]
+  },
+
+  "showModal": {
+    "prefix": "Taro.showModal",
+    "body": [
+      "Taro.showModal({",
+      "  title: '$1',",
+      "  content: '$2'",
+      "})"
+    ]
+  },
+
+  "uploadFile": {
+    "prefix": "Taro.uploadFile",
+    "body": [
+      "Taro.uploadFile({",
+      "  url: '$1',",
+      "  name: '$2',",
+      "  filePath: '$3'",
+      "})"
+    ]
+  },
+
+  "downloadFile": {
+    "prefix": "Taro.downloadFile",
+    "body": [
+      "Taro.downloadFile({",
+      "  url: '$1',",
+      "  success(resp: { tempFilePath: string, filePath: string, statusCode: string, profile: string }) {",
+      "    $2",
+      "  }",
+      "})"
+    ]
+  },
+
+  "setStorage": {
+    "prefix": "Taro.setStorage",
+    "body": [
+      "Taro.setStorage({",
+      "  key: '$1',",
+      "  data: $2",
+      "})"
+    ]
+  },
+
+  "setStorageSync": {
+    "prefix": "Taro.setStorageSync",
+    "body": "Taro.setStorageSync('$1', $2)"
+  },
+
+  "removeStorage": {
+    "prefix": "Taro.removeStorage",
+    "body": "Taro.removeStorage({ key: '$1' })"
+  },
+
+  "removeStorageSync": {
+    "prefix": "Taro.removeStorageSync",
+    "body": "Taro.removeStorageSync('$1')"
+  },
+
+  "previewImage": {
+    "prefix": "Taro.previewImage",
+    "body": [
+      "Taro.previewImage({",
+      "  urls: [",
+      "    '$1'",
+      "  ]",
+      "})"
+    ]
+  },
+
+  "chooseImage": {
+    "prefix": "Taro.chooseImage",
+    "body": [
+      "Taro.chooseImage({",
+      "  count: 9,",
+      "  sizeType: [ 'original', 'compressed' ],",
+      "  sourceType: [ 'album', 'camera' ],",
+      "  success(resp: { tempFilePaths: string[], tempFiles: { path: string, size: number }[] }) {",
+      "    $1",
+      "  }",
+      "})"
+    ]
+  },
+
+  "saveImageToPhotosAlbum": {
+    "prefix": "Taro.saveImageToPhotosAlbum",
+    "body": [
+      "Taro.saveImageToPhotosAlbum({",
+      "  filePath: '$1',",
+      "})"
+    ]
+  },
+
+  "stopPullDownRefresh": {
+    "prefix": "Taro.stopPullDownRefresh",
+    "body": "Taro.stopPullDownRefresh()"
+  },
+
+  "showTabBarRedDot": {
+    "prefix": "Taro.showTabBarRedDot",
+    "body": "Taro.showTabBarRedDot({ index: $1 })"
+  },
+
+  "hideTabBarRedDot": {
+    "prefix": "Taro.hideTabBarRedDot",
+    "body": "Taro.hideTabBarRedDot({ index: $1 })"
+  },
+
+  "createAnimation": {
+    "prefix": "Taro.createAnimation",
+    "body": [
+      "Taro.createAnimation({",
+      "  duration: $1,",
+      "  timingFunction: 'linear'",
+      "})"
+    ]
+  },
+
+  "nextTick": {
+    "prefix": "Taro.nextTick",
+    "body": [
+      "Taro.nextTick(() => {",
+      "  $1",
+      "})"
+    ]
+  },
+
+  "setNavigationBarTitle": {
+    "prefix": "Taro.setNavigationBarTitle",
+    "body": "Taro.setNavigationBarTitle({ title: '$1' })"
+  },
+
+  "pageScrollTo": {
+    "prefix": "Taro.pageScrollTo",
+    "body": [
+      "Taro.pageScrollTo({",
+      "  scrollTop: $1",
+      "})"
+    ]
+  },
+
+  "createCanvasContext": {
+    "prefix": "Taro.createCanvasContext",
+    "body": "Taro.createCanvasContext('$1')"
+  },
+
+  "canvasToTempFilePath": {
+    "prefix": "Taro.canvasToTempFilePath",
+    "body": [
+      "Taro.canvasToTempFilePath({",
+      "  x: 0,",
+      "  y: 0,",
+      "  canvasId: '$1',",
+      "  fileType: 'png',",
+      "  quality: 1,",
+      "  success(resp: { tempFilePath: string }) {",
+      "    $2",
+      "  }",
+      "})"
+    ]
+  },
+
+  "getLaunchOptionsSync": {
+    "prefix": "Taro.getLaunchOptionsSync",
+    "body": "Taro.getLaunchOptionsSync()"
+  },
+
+  "onError": {
+    "prefix": "Taro.onError",
+    "body": [
+      "Taro.onError(error => {",
+      "  $1",
+      "})"
+    ]
+  },
+
+  "setTimeout": {
+    "prefix": "setTimeout",
+    "body": [
+      "setTimeout(() => {",
+      "  $2",
+      "}, $1)"
+    ]
+  },
+
+  "clearTimeout": {
+    "prefix": "clearTimeout",
+    "body": "clearTimeout($1)"
+  },
+
+  "setInterval": {
+    "prefix": "setInterval",
+    "body": [
+      "setInterval(() => {",
+      "  $2",
+      "}, $1)"
+    ]
+  },
+
+  "clearInterval": {
+    "prefix": "clearInterval",
+    "body": "clearInterval($1)"
+  },
+
+  "offError": {
+    "prefix": "Taro.offError",
+    "body": [
+      "Taro.offError($1)"
+    ]
+  },
+
+  "getSetting": {
+    "prefix": "Taro.getSetting",
+    "body": [
+      "Taro.getSetting({",
+      "  withSubscriptions: false,",
+      "  success(resp: { authSetting: any, subscriptionsSetting: any, miniprogramAuthSetting: any }) {",
+      "    $1",
+      "  }",
+      "})"
+    ]
+  },
+
+  "canIUse": {
+    "prefix": "Taro.canIUse",
+    "body": "Taro.canIUse('$1')"
+  },
+
+  "request": {
+    "prefix": "Taro.request",
+    "body": [
+      "Taro.request({",
+      "  url: '$1',",
+      "  data: $2,",
+      "  header: {",
+      "    'content-type': 'application/json'",
+      "  },",
+      "  method: 'GET',",
+      "  dataType: 'json',",
+      "  success(resp: { data: any, statusCode: number, header: any, cookies: string[], profile: any }) {",
+      "    $3",
+      "  }",
+      "})"
+    ]
+  },
+
+  "requestPayment": {
+    "prefix": "Taro.requestPayment",
+    "body": [
+      "Taro.requestPayment({",
+      "  timeStamp: Date.now(),",
+      "  nonceStr: '$1',",
+      "  package: $2,",
+      "  signType: 'MD5',",
+      "  paySign: '$3',",
+      "  success(resp) {",
+      "    $4",
+      "  }",
+      "})",
+    ]
+  },
+
+  "login": {
+    "prefix": "Taro.login",
+    "body": [
+      "Taro.login({",
+      "  success(resp: { code: string }) {",
+      "    $1",
+      "  }",
+      "})",
+    ]
+  },
+
+  "navigateToMiniProgram": {
+    "prefix": "Taro.navigateToMiniProgram",
+    "body": [
+      "Taro.navigateToMiniProgram({",
+      "  appId: '$1',",
+      "  path: '$2',",
+      "  extraData: {},",
+      "  envVersion: 'release'",
+      "})"
+    ]
+  },
+
+  "getUserInfo": {
+    "prefix": "Taro.getUserInfo",
+    "body": [
+      "Taro.getUserInfo({",
+      "  withCredentials: false,",
+      "  lang: 'zh_CN',",
+      "  success(resp: { userInfo: { nickName: string, avatarUrl: string, gender: number, country: string, province: string, language: string }, rawData: string, signature: string, encryptedData: string, iv: string, cloudID: string }) {",
+      "    $1",
+      "  }",
+      "})",
+    ]
+  },
+
+  "getUpdateManager": {
+    "prefix": "Taro.getUpdateManager",
+    "body": "Taro.getUpdateManager()"
+  },
+
+  "getBackgroundAudioManager": {
+    "prefix": "Taro.getBackgroundAudioManager",
+    "body": "Taro.getBackgroundAudioManager()"
+  },
+
+  "requestSubscribeMessage": {
+    "prefix": "Taro.requestSubscribeMessage",
+    "body": [
+      "Taro.requestSubscribeMessage({",
+      "  tmplIds: [ '$1' ],",
+      "  success(resp: { errMsg: string, TEMPLATE_ID: string }) {$2}",
+      "})"
+    ]
+  },
+
+  "setScreenBrightness": {
+    "prefix": "Taro.setScreenBrightness",
+    "body": "Taro.setScreenBrightness({ value: $1 })"
+  },
+
+  "setKeepScreenOn": {
+    "prefix": "Taro.setKeepScreenOn",
+    "body": "Taro.setKeepScreenOn({ keepScreenOn: true$1 })"
+  },
+
+  "makePhoneCall": {
+    "prefix": "Taro.makePhoneCall",
+    "body": "Taro.makePhoneCall({ phoneNumber: '$1' })"
+  },
+
+  "scanCode": {
+    "prefix": "Taro.scanCode",
+    "body": [
+      "Taro.scanCode({",
+      "  onlyFromCamera: false,",
+      "  scanType: [ 'barCode', 'qrCode' ],",
+      "  success(resp: { result: string, scanType: string, charSet: string, path: string, rawData: string }) {",
+      "    $1",
+      "  }",
+      "})"
+    ]
+  },
+
+  "getExtConfig": {
+    "prefix": "Taro.getExtConfig",
+    "body": [
+      "Taro.getExtConfig({",
+      "  success(resp: { extConfig: any }) {",
+      "    $1",
+      "  }",
+      "})"
+    ]
+  },
+
+  "createSelectorQuery": {
+    "prefix": "Taro.createSelectorQuery",
+    "body": "Taro.createSelectorQuery()"
+  },
+
+  "getCurrentPages": {
+    "prefix": "Taro.getCurrentPages",
+    "body": "Taro.getCurrentPages()"
+  },
+
+  "getRealtimeLogManager": {
+    "prefix": "Taro.getRealtimeLogManager",
+    "body": "Taro.getRealtimeLogManager()"
+  },
+
+  "switchTab": {
+    "prefix": "Taro.switchTab",
+    "body": "Taro.switchTab({ url: '$1' })"
+  },
+
+  "reLaunch": {
+    "prefix": "Taro.reLaunch",
+    "body": "Taro.reLaunch({ url: '$1' })"
+  },
+
+  "redirectTo": {
+    "prefix": "Taro.redirectTo",
+    "body": "Taro.redirectTo({ url: '$1' })"
+  },
+
+  "navigateTo": {
+    "prefix": "Taro.navigateTo",
+    "body": "Taro.navigateTo({ url: '$1' })"
+  },
+
+  "navigateBack": {
+    "prefix": "Taro.navigateBack",
+    "body": "Taro.navigateBack()"
+  }
+}
