@@ -223,7 +223,7 @@
     "body": [
       "Taro.getLocation({",
       "  type: 'gcj02',",
-      "  success(resp: { latitude: number, longitude: number, speed: number, accuracy: number, altitude: number, verticalAccuracy: number, horizontalAccuracy: number }) {",
+      "  success(resp) {",
       "    $1",
       "  }",
       "})"
@@ -266,7 +266,7 @@
     "body": [
       "Taro.downloadFile({",
       "  url: '$1',",
-      "  success(resp: { tempFilePath: string, filePath: string, statusCode: string, profile: string }) {",
+      "  success(resp) {",
       "    $2",
       "  }",
       "})"
@@ -316,7 +316,7 @@
       "  count: 9,",
       "  sizeType: [ 'original', 'compressed' ],",
       "  sourceType: [ 'album', 'camera' ],",
-      "  success(resp: { tempFilePaths: string[], tempFiles: { path: string, size: number }[] }) {",
+      "  success(resp) {",
       "    $1",
       "  }",
       "})"
@@ -394,7 +394,7 @@
       "  canvasId: '$1',",
       "  fileType: 'png',",
       "  quality: 1,",
-      "  success(resp: { tempFilePath: string }) {",
+      "  success(resp) {",
       "    $2",
       "  }",
       "})"
@@ -455,7 +455,7 @@
     "body": [
       "Taro.getSetting({",
       "  withSubscriptions: false,",
-      "  success(resp: { authSetting: any, subscriptionsSetting: any, miniprogramAuthSetting: any }) {",
+      "  success(resp) {",
       "    $1",
       "  }",
       "})"
@@ -478,7 +478,7 @@
       "  },",
       "  method: 'GET',",
       "  dataType: 'json',",
-      "  success(resp: { data: any, statusCode: number, header: any, cookies: string[], profile: any }) {",
+      "  success(resp) {",
       "    $3",
       "  }",
       "})"
@@ -505,7 +505,7 @@
     "prefix": "Taro.login",
     "body": [
       "Taro.login({",
-      "  success(resp: { code: string }) {",
+      "  success(resp) {",
       "    $1",
       "  }",
       "})",
@@ -530,7 +530,7 @@
       "Taro.getUserInfo({",
       "  withCredentials: false,",
       "  lang: 'zh_CN',",
-      "  success(resp: { userInfo: { nickName: string, avatarUrl: string, gender: number, country: string, province: string, language: string }, rawData: string, signature: string, encryptedData: string, iv: string, cloudID: string }) {",
+      "  success(resp) {",
       "    $1",
       "  }",
       "})",
@@ -552,7 +552,7 @@
     "body": [
       "Taro.requestSubscribeMessage({",
       "  tmplIds: [ '$1' ],",
-      "  success(resp: { errMsg: string, TEMPLATE_ID: string }) {$2}",
+      "  success(resp) {$2}",
       "})"
     ]
   },
@@ -578,7 +578,7 @@
       "Taro.scanCode({",
       "  onlyFromCamera: false,",
       "  scanType: [ 'barCode', 'qrCode' ],",
-      "  success(resp: { result: string, scanType: string, charSet: string, path: string, rawData: string }) {",
+      "  success(resp) {",
       "    $1",
       "  }",
       "})"
@@ -589,7 +589,7 @@
     "prefix": "Taro.getExtConfig",
     "body": [
       "Taro.getExtConfig({",
-      "  success(resp: { extConfig: any }) {",
+      "  success(resp) {",
       "    $1",
       "  }",
       "})"
