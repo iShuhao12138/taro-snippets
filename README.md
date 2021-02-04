@@ -144,7 +144,7 @@ Taro.setStorage({
 ```javascript
 Taro.getLocation({
   type: 'gcj02',
-  success(resp: { latitude: number, longitude: number, speed: number, accuracy: number, altitude: number, verticalAccuracy: number, horizontalAccuracy: number }) {
+  success(resp) {
     $1
   }
 })
