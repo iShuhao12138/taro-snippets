@@ -26,7 +26,7 @@
       "  componentDidShow() {}",
       "",
       "  onShareAppMessage() {",
-      "    return getShareCommon('$2', '$4')",
+      "    return getShareCommon('$4', '$2')",
       "  }",
       "",
       "  render() {",

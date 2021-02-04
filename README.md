@@ -9,16 +9,34 @@ vscode的代码提示功能，$1表示光标第一个所在区域，按tab键会
 ```javascript
 import Taro, { Component, Config } from '@tarojs/taro'
 import { View } from '@tarojs/components'
+import getShareCommon from '@/utils/share'
 
-export default class $1 extends Component {
+type IState = {}
+
+/**
+ * @cmdName {$2} $3 
+ */
+export default class  extends Component<{}, IState> {
   config: Config = {
-    navigationBarTitleText: '$2',
+    navigationBarTitleText: '$4',
     navigationBarTextStyle: 'black'
   }
 
-  render () {
+  state: IState = {
+    
+  }
+
+  componentWillMount() {}
+
+  componentDidShow() {}
+
+  onShareAppMessage() {
+    return getShareCommon('$4', '$2')
+  }
+
+  render() {
     return (
-      <View>$3</View>
+      <View>$5</View>
     )
   }
 }
@@ -30,21 +48,30 @@ export default class $1 extends Component {
 import Taro, { Component } from '@tarojs/taro'
 import { View } from '@tarojs/components'
 
-export default class $1 extends Component {
-  render () {
+type IState = {}
+
+type IProps = {}
+
+export default class $1 extends Component<IProps, IState> {
+  state: IState = {}
+
+  componentWillMount() {
+    
+  }
+
+  componentDidShow() {
+    
+  }
+
+  componentWillReceiveProps(nextProps) {
+    
+  }
+
+  render() {
     return (
       <View>$2</View>
     )
   }
-}
-```
-
-### taro-config
-
-```javascript
-config = {
-  navigationBarTitleText: '$1',
-  navigationBarTextStyle: 'black'
 }
 ```
 
