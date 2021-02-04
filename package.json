@@ -2,7 +2,7 @@
     "name": "taro-snippets",
     "displayName": "taro-snippets",
     "description": "生成taro组件代码以及使用taro方法提示",
-    "version": "0.0.4",
+    "version": "0.0.5",
     "publisher": "hacker",
     "icon": "assets/icon.png",
     "engines": {
