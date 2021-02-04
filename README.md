@@ -16,7 +16,7 @@ type IState = {}
 /**
  * @cmdName {$2} $3 
  */
-export default class  extends Component<{}, IState> {
+export default class $1 extends Component<{}, IState> {
   config: Config = {
     navigationBarTitleText: '$4',
     navigationBarTextStyle: 'black'
